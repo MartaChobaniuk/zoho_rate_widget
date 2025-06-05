@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <title>Currency Rate Widget</title>
+    <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+    <div id="error_message" class="error hidden"></div>
+    <div id="success_message" class="success hidden"></div>
+
+    <div class="widget">
+        <p><strong>NBU Rate:</strong> <span id="nbu_rate"></span></p>
+        <p><strong>Deal Rate:</strong>
+        <input id="deal_rate_input" type="number" step="0.01" placeholder="Enter deal rate" />
+        </p>
+        <p><strong>Difference:</strong> <span id="diff"></span>%</p>
+
+        <button id="update_btn" class="hidden">
+            <span class="spinner hidden" id="update_spinner"></span>
+            <span id="update_btn_text">Update Deal Rate</span>
+        </button>
+    </div>
+
+    <div class="log">
+    <h4>Activity Log</h4>
+    <ul id="log_list"></ul>
+    </div>
+
+    <script src="https://live.zwidgets.com/js-sdk/1.2/ZohoEmbededAppSDK.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>

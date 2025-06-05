@@ -1,0 +1,23 @@
+{
+  "widget": {
+    "name": "exchange_rate_widget",
+    "version": "1.0",
+    "api_version": "1.0",
+    "description": "Widget to display NBU exchange rate and compare it with the deal rate.",
+    "index": "widget.html",
+    "mobile_support": false,
+    "permissions": {
+      "crm": {
+        "modules": ["Deals"]
+      }
+    },
+    "components": [
+      {
+        "location": "crm.record.detail.rightpanel",
+        "target": {
+          "module": "Deals"
+        }
+      }
+    ]
+  }
+}
